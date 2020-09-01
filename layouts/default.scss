@@ -1,0 +1,117 @@
+html {
+	@apply font-display;
+
+	font-size: 16px;
+}
+
+body {
+	@apply text-base text-primary-100 tracking-default bg-secondary-200;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	--primary-100: #1a1a25;
+	--primary-200: #21212e;
+
+	--secondary-100: #f8f0f2;
+	--secondary-200: #f3ecee;
+	--secondary-300: #e9dfe2;
+
+	--gold-100: #c38765;
+	--gold-200: #d1a48a;
+
+	--gray-100: #978d90;
+
+	--text-color: var(--primary-100);
+	--light: var(--secondary-200);
+	--dark: var(--primary-100);
+
+	--highlight: var(--gold-100);
+	--highlight--alt: var(--gold-200);
+
+	--alt-100: var(--gray-100);
+	// --alt-200: var(--secondary-300);
+}
+
+.constrain {
+	max-width: 1280px;
+	@apply mx-auto;
+
+	&--large {
+		max-width: 1600px;
+		@apply mx-auto;
+	}
+}
+
+.content-wrapper {
+	@apply pt-56;
+}
+
+.content {
+	// min-height: 1500px;
+}
+
+.bg-angle {
+	&--right,
+	&--left {
+		@apply relative;
+
+		&::after {
+			@apply z-0 absolute top-0 left-0 bg-secondary-300 h-full w-full;
+			content: ' ';
+		}
+
+		> div {
+			@apply relative z-10;
+		}
+	}
+
+	&--right {
+		&::after {
+			clip-path: polygon(100% 20%, 0% 80%, 0 100%, 100% 100%, 100% 0%);
+		}
+	}
+	&--left {
+		&::after {
+			clip-path: polygon(0% 20%, 0% 100%, 100% 100%, 100% 80%);
+		}
+	}
+}
+
+h1 {
+	@apply text-2xl font-light;
+
+	max-width: 425px;
+	line-height: 70%;
+}
+
+h2 {
+	@apply text-xl font-normal;
+
+	// max-width: 402px;
+	line-height: 88%;
+}
+
+h3 {
+	@apply text-lg font-normal tracking-wide;
+
+	max-width: 545px;
+	line-height: 88%;
+
+	&.tall {
+		line-height: 133%;
+	}
+}
+
+header {
+	@apply absolute;
+}
+
+section {
+}

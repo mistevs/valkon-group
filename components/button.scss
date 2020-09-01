@@ -1,0 +1,22 @@
+.button {
+	@apply py-3 inline-block text-center capitalize font-semibold;
+
+	min-width: 302px;
+
+	&,
+	&--filled {
+		@apply bg-highlight border-2 border-highlight;
+
+		&:hover {
+			@apply border-highlight-alt bg-highlight-alt;
+		}
+	}
+
+	&--outline {
+		@apply bg-transparent;
+
+		&:hover {
+			@apply border-highlight-alt bg-transparent;
+		}
+	}
+}
