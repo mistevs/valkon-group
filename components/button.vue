@@ -1,6 +1,6 @@
 <template>
-	<a
-		href=""
+	<nuxt-link
+		:to="to"
 		class="button"
 		:class="{
 			'button--filled': type === 'filled',
@@ -8,12 +8,16 @@
 		}"
 	>
 		{{ text }}
-	</a>
+	</nuxt-link>
 </template>
 
 <script>
 export default {
-	props: { text: String, type: { type: String, default: 'filled' } },
+	props: {
+		text: String,
+		type: { type: String, default: 'filled' },
+		to: { type: String, default: '' },
+	},
 }
 </script>
 

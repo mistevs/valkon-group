@@ -1,8 +1,21 @@
 <template>
-	<nuxt-link to="/jursidictions" class="jurisdiction">
+	<nuxt-link
+		:to="`/jurisdictions/${title.replace(' ', '-')}`"
+		class="jurisdiction"
+		:class="{
+			'jurisdiction--active':
+				active.toLowerCase() === title.toLowerCase().replace(' ', '-'),
+			'jurisdiction--large': type === 'large',
+		}"
+	>
 		<div class="relative">
 			<img :src="image" />
-			<IconArrowRight width="39" height="34" class="icon-arrow" />
+			<IconArrowRight
+				:width="type === 'large' ? 72 : 36"
+				:height="type === 'large' ? 68 : 34"
+				:strokeWidth="type === 'large' ? 1 : 2"
+				class="icon-arrow"
+			/>
 		</div>
 		<p class="text-center capitalize text-big mt-9">{{ title }}</p>
 	</nuxt-link>
@@ -13,7 +26,7 @@ import IconArrowRight from '@/components/icons/icon-arrow-right'
 
 export default {
 	components: { IconArrowRight },
-	props: { image: String, title: String },
+	props: { image: String, title: String, active: String, type: String },
 }
 </script>
 
@@ -22,13 +35,14 @@ export default {
 	@apply opacity-75;
 	transition: all 0.5s ease;
 
+	&--active,
 	&:hover {
 		@apply opacity-100;
 
 		transform: translateY(-20%);
 
 		&::after {
-			@apply opacity-100;
+			opacity: 1 !important;
 			width: 30px !important;
 		}
 	}
@@ -49,6 +63,15 @@ export default {
 
 		width: 162px;
 		height: 162px;
+	}
+
+	&--large {
+		@apply mx-24 my-24;
+
+		img {
+			width: 302px;
+			height: 302px;
+		}
 	}
 }
 

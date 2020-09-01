@@ -9,14 +9,14 @@
 		<path
 			d="M1 9H18.066"
 			:stroke="iconColor"
-			stroke-width="2"
+			:stroke-width="strokeWidth"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			d="M10.1025 17L18.0667 9L10.1025 1"
 			:stroke="iconColor"
-			stroke-width="2"
+			:stroke-width="strokeWidth"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
@@ -41,6 +41,10 @@ export default {
 		iconColor: {
 			type: String,
 			default: 'currentColor',
+		},
+		strokeWidth: {
+			type: Number,
+			default: 2,
 		},
 	},
 }

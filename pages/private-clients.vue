@@ -2,10 +2,11 @@
 	<div class="content">
 		<section class="constrain text-light">
 			<h2 class="mt-20 max-w-full">For Private Clients</h2>
-			<h3 class="mt-40 text-big tracking-wide">
+			<h3 class="mt-40 text-big tracking-wide tall">
 				Valkon takes a personal, long-term approach to learn about your
-				personal and business goals and implement and manage a suitable
-				corporate structure that will allow your businesses to scale.
+				personal and business goals and implements and manages a
+				suitable corporate structure that will allow your businesses to
+				scale.
 			</h3>
 		</section>
 		<section class="bg-angle--left pb-32">

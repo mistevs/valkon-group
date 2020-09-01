@@ -84,6 +84,39 @@ body {
 	}
 }
 
+.has-dropdown {
+	&:hover {
+		.dropdown {
+			@apply opacity-100 block;
+
+			height: 140px;
+
+			> li > a {
+				&:hover {
+					@apply bg-highlight text-light;
+				}
+			}
+		}
+	}
+
+	.dropdown {
+		@apply overflow-hidden;
+
+		top: calc(100%);
+		left: 50%;
+		transform: translateX(-50%);
+
+		a {
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+.dropdown {
+	@apply opacity-0 h-0;
+	transition: all 0.5s ease;
+}
+
 h1 {
 	@apply text-2xl font-light;
 
@@ -106,6 +139,10 @@ h3 {
 
 	&.tall {
 		line-height: 133%;
+	}
+
+	&.wide {
+		max-width: none;
 	}
 }
 

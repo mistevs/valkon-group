@@ -8,8 +8,7 @@
 			<div class="flex px-40">
 				<div class="w-1/2">
 					<h3 class="tall">
-						Valkon Group<br />World Headquarters
-						<br /><br /><br /><br />
+						Valkon Group<br />World Headquarters <br /><br />
 						London,UK
 					</h3>
 				</div>
@@ -28,8 +27,7 @@
 			<div class="flex px-40 mt-40">
 				<div class="w-1/2">
 					<h3 class="tall">
-						Valkon Group<br />World Headquarters
-						<br /><br /><br /><br />
+						Valkon Group<br />World Headquarters <br /><br />
 						London,UK
 					</h3>
 				</div>
@@ -48,8 +46,7 @@
 			<div class="flex px-40 mt-40">
 				<div class="w-1/2">
 					<h3 class="tall">
-						Valkon Group<br />World Headquarters
-						<br /><br /><br /><br />
+						Valkon Group<br />World Headquarters <br /><br />
 						London,UK
 					</h3>
 				</div>

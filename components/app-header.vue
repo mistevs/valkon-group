@@ -7,14 +7,16 @@
 				</li>
 				<li><a class="pl-3" href="">RU</a></li>
 				<li class="ml-auto">
-					<a href="" class="crown__social-responsibility"
-						>Social Responsibility</a
+					<nuxt-link
+						to="/social-responsibilities"
+						class="crown__social-responsibility"
+						>Social Responsibility</nuxt-link
 					>
 				</li>
 			</ul>
 		</div>
 		<nav class="constrain font-semibold">
-			<ul class="flex items-center">
+			<ul class="flex items-center tracking-wide">
 				<li class="mr-8">
 					<nuxt-link to="/" class="flex items-center"
 						><IconValkon class="mr-3" />
@@ -36,8 +38,33 @@
 						>For Private Clients</nuxt-link
 					>
 				</li>
-				<li class="ml-auto">
+				<li class="ml-auto relative has-dropdown">
 					<nuxt-link to="/services" class="px-8">Services</nuxt-link>
+					<ul
+						class="dropdown absolute top-0 bg-secondary-200 border-4 border-secondary-300 shadow text-primary-100 font-normal"
+					>
+						<li>
+							<nuxt-link
+								to="/jurisdictions/"
+								class="px-8 py-2 inline-block border-b-2 border-secondary-300"
+								>Jurisdictions</nuxt-link
+							>
+						</li>
+						<li>
+							<nuxt-link
+								to="/jurisdictions/"
+								class="px-8 py-2 inline-block border-b-2 border-secondary-300"
+								>Jurisdictions</nuxt-link
+							>
+						</li>
+						<li>
+							<nuxt-link
+								to="/jurisdictions/"
+								class="px-8 py-2 inline-block"
+								>Jurisdictions</nuxt-link
+							>
+						</li>
+					</ul>
 				</li>
 				<li>
 					<nuxt-link to="/about" class="px-8">About</nuxt-link>
@@ -55,6 +82,45 @@
 <style lang="scss">
 header.header--light {
 	@apply text-secondary-200;
+}
+
+nav > ul > li {
+	//logo
+	&:first-child {
+		&:hover {
+			svg {
+				@apply text-highlight;
+
+				transition: all 0.5s ease;
+			}
+		}
+	}
+
+	//normal nav
+	&:not(:first-child):not(.has-dropdown) > a {
+		@apply relative;
+
+		&.nuxt-link-active,
+		&:hover {
+			&::after {
+				width: 30px;
+			}
+		}
+
+		&::after {
+			@apply absolute bg-highlight;
+
+			content: ' ';
+
+			width: 0px;
+			height: 2px;
+			top: calc(100% + 0.75rem);
+			left: 50%;
+
+			transform: translateX(-50%);
+			transition: all 0.5s ease;
+		}
+	}
 }
 </style>
 

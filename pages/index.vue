@@ -12,10 +12,12 @@
 						<s-button
 							text="For Agents & Partners"
 							type="filled"
+							to="/agencies-partners"
 						/><br />
 						<s-button
 							text="For Private Clients"
 							type="outline"
+							to="/private-clients"
 							class="mt-3"
 						/>
 					</div>
