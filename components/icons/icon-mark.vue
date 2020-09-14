@@ -1,10 +1,10 @@
 <template>
 	<icon
-		iconName="mark"
+		icon-name="mark"
 		:width="width"
 		:height="height"
-		viewBox="0 0 65 64"
-		iconColor="none"
+		view-box="0 0 65 64"
+		icon-color="none"
 	>
 		<path
 			d="M44.7924 42.6654H48.9688V42.5943L36.9844 32.3905L48.4604 21.4046V21.3335H44.5019L34.4422 31.2173H34.1517V21.3335H30.8105V42.6654H34.1517V33.9193H34.4785L44.7924 42.6654Z"

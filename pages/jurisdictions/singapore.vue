@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<section class="constrain text-light">
-			<h2 class="mt-20 max-w-full pb-40">Estonia</h2>
+			<h2 class="mt-20 max-w-full pb-40">Singapore</h2>
 		</section>
 		<section class="bg-secondary-200 constrain--large">
 			<jurisdiction-description />
@@ -9,30 +9,52 @@
 		<section class="bg-secondary-200 constrain--large">
 			<jurisdictions
 				class="constrain py-12 lg:pt-40 lg:pb-20"
-				active="estonia"
+				active="singapore"
 			/>
 		</section>
-		<section class="bg-secondary-200 pt-12 mb-20 lg:pt-24 lg:pb-40">
-			<why-work />
+		<section class="bg-secondary-200 pt-24 pb-40">
+			<h3 class="constrain">Why work with us?</h3>
+			<div class="flex constrain mt-24">
+				<card
+					no="1"
+					title="Better prices, quick, and easy"
+					icon="IconGlobe"
+				></card>
+				<card
+					no="2"
+					title="Self-service portal"
+					icon="IconGlobe"
+				></card>
+				<card
+					no="3"
+					title="Dedicated success manager"
+					icon="IconGlobe"
+				></card>
+				<card
+					no="4"
+					title="Secure, Private & Confidential"
+					icon="IconGlobe"
+				></card>
+			</div>
 		</section>
 	</div>
 </template>
 
 <script>
 import Jurisdictions from '@/components/jurisdictions'
-import WhyWork from '@/components/why-work'
+import Card from '@/components/card'
 import JurisdictionDescription from '@/components/jurisdiction-description'
 
 export default {
 	components: {
 		Jurisdictions,
-		WhyWork,
+		Card,
 		JurisdictionDescription,
 	},
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content-wrapper,
 .booklet-preview {
 	background-image: url('/images/jurisdictions/backgrounds/estonia.jpg');

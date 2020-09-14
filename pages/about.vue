@@ -129,6 +129,6 @@ export default {
 
 <style lang="scss" scoped>
 .content-wrapper {
-	background: url('/images/clients-bg.jpg') no-repeat center top;
+	background: url('/images/pages/clients-bg.jpg') no-repeat center top;
 }
 </style>

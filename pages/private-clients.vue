@@ -9,8 +9,8 @@
 				scale.
 			</h3>
 		</section>
-		<section class="bg-angle--left pb-32">
-			<div class="mt-40 flex constrain">
+		<section class="bg-angle--left pb-16 lg:pb-32">
+			<div class="mt-20 lg:mt-40 flex flex-col lg:flex-row constrain">
 				<card
 					no="1"
 					title="Company Formation & Management"
@@ -38,12 +38,12 @@
 			subtitle="Global Reach"
 		/>
 		<section class="bg-secondary-200">
-			<jurisdictions class="constrain py-40" />
+			<jurisdictions class="constrain py-12 lg:pt-20 lg:pt-40" />
 		</section>
 
-		<section class="bg-secondary-200 pt-24 pb-16">
+		<section class="bg-secondary-200 pb-8 lg:pt-24 lg:pb-16">
 			<h3 class="constrain">Why work with us?</h3>
-			<div class="flex constrain mt-24">
+			<div class="flex flex-col lg:flex-row constrain mt-12 lg:mt-24">
 				<card
 					no="1"
 					title="Better prices, quick, and easy"
@@ -83,6 +83,6 @@ export default {
 
 <style lang="scss" scoped>
 .content-wrapper {
-	background: url('/images/clients-bg.jpg') no-repeat center top;
+	background: url('/images/pages/clients-bg.jpg') no-repeat center top;
 }
 </style>

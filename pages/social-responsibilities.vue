@@ -3,8 +3,8 @@
 		<section class="constrain text-light">
 			<h2 class="mt-20 max-w-full pb-40">Social Responsibilities</h2>
 		</section>
-		<section class="bg-secondary-200 constrain--large p-40">
-			<div class="w-8/12 mx-auto">
+		<section class="bg-secondary-200 constrain--large p-12 lg:p-40">
+			<div class="lg:w-8/12 mx-auto">
 				<h3 class="wide tall mb-20">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 					tincidunt lobortis arcu, ac molestie massa pretium elementum
@@ -80,6 +80,6 @@ export default {
 .content-wrapper {
 	@apply pb-40;
 
-	background: url('/images/clients-bg.jpg') no-repeat center top;
+	background: url('/images/pages/clients-bg.jpg') no-repeat center top;
 }
 </style>

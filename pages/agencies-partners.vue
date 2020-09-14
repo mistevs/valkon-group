@@ -4,8 +4,8 @@
 			<h2 class="text-light mt-20">For Agents & Partners</h2>
 		</section>
 		<section class="bg-angle--right pb-32">
-			<div class="mt-40 flex constrain">
-				<div class="w-1/4"></div>
+			<div class="mt-40 flex flex-col lg:flex-row constrain">
+				<div class="w-1/4 hidden lg:block"></div>
 				<card no="1" title="Jurisdictions" icon="IconStructure"></card>
 				<card no="2" title="Legal Consultancy" icon="IconScale"></card>
 				<card
@@ -20,7 +20,7 @@
 			subtitle="Global Reach"
 		/>
 		<section class="bg-secondary-200">
-			<jurisdictions class="constrain py-40" />
+			<jurisdictions class="constrain py-12 lg:pt-20 lg:pt-40" />
 		</section>
 	</div>
 </template>
@@ -35,6 +35,6 @@ export default {
 
 <style lang="scss" scoped>
 .content-wrapper {
-	background: url('/images/agents-bg.jpg') no-repeat center top;
+	background: url('/images/pages/agents-bg.jpg') no-repeat center top;
 }
 </style>

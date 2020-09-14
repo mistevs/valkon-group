@@ -28,7 +28,7 @@ export default {
 			},
 		],
 		link: [
-			{ rel: 'stylesheet', href: 'https://use.typekit.net/frm8rvh.css' },
+			{ rel: 'stylesheet', href: 'https://use.typekit.net/cqy8pjo.css' },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{
 				rel: 'icon',

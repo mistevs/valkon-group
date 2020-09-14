@@ -1,7 +1,9 @@
 .button {
-	@apply py-3 inline-block text-center capitalize font-semibold;
+	@apply py-3 block text-center capitalize font-semibold;
 
-	min-width: 302px;
+	@screen lg {
+		min-width: 302px;
+	}
 
 	&,
 	&--filled {

@@ -1,14 +1,16 @@
 <template>
-	<div class="bg-primary-200 relative py-40 text-light overflow-hidden">
+	<div
+		class="bg-primary-200 relative py-12 lg:py-40 text-light overflow-hidden"
+	>
 		<div class="constrain">
 			<h3>{{ subtitle }}</h3>
-			<h2 class="mt-32">{{ title }}</h2>
+			<h2 class="mt-16 lg:mt-32">{{ title }}</h2>
 		</div>
 		<IconMarkLarge
-			waterColor="transparent"
-			iconColor="#C38765"
-			pinColor="#484862"
-			circleColor="#484862"
+			water-color="transparent"
+			icon-color="#C38765"
+			pin-color="#484862"
+			circle-color="#484862"
 			class="icon-mark-large absolute top-0 right-0"
 		/>
 	</div>
@@ -30,12 +32,17 @@ h2 {
 }
 
 .icon-mark-large {
-	width: 1200px;
-	height: 1200px;
+	width: 400px;
+	height: 400px;
+	top: -150px;
+	right: -150px;
 
-	top: 50%;
-	right: -450px;
-
-	transform: translateY(-50%);
+	@screen lg {
+		width: 1200px;
+		height: 1200px;
+		top: 50%;
+		right: -450px;
+		transform: translateY(-50%);
+	}
 }
 </style>

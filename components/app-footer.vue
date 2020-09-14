@@ -1,11 +1,11 @@
 <template>
 	<div>
 		<contact />
-		<footer class="bg-secondary-300 pb-40">
+		<footer class="bg-secondary-300 lg:pb-40">
 			<div class="footer-wrapper">
 				<nav class="mt-40">
 					<ul
-						class="flex py-8 constrain border-t-2 border-b-2 font-semibold"
+						class="flex flex-col lg:flex-row py-8 constrain border-t-2 border-b-2 font-semibold"
 					>
 						<li>
 							<nuxt-link to="/private-clients" class="py-8 mr-16"
@@ -17,8 +17,8 @@
 								>For Private Clients</nuxt-link
 							>
 						</li>
-						<li class="ml-auto">
-							<nuxt-link to="/services" class="py-8 mr-16"
+						<li class="lg:ml-auto">
+							<nuxt-link to="/services" class="py-8 lg:mr-16"
 								>Services</nuxt-link
 							>
 						</li>

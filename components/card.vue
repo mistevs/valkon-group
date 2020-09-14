@@ -66,10 +66,16 @@ export default {
 
 <style lang="scss">
 .card {
-	@apply mx-3;
-	width: 302px;
+	@apply w-full mb-6;
+
 	height: 500px;
-	perspective: 600px;
+
+	@screen lg {
+		@apply mx-3 mb-0;
+		width: 302px;
+		height: 500px;
+		perspective: 600px;
+	}
 
 	&--flippable {
 		@apply cursor-pointer;

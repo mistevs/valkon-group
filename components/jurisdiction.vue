@@ -1,10 +1,10 @@
 <template>
 	<nuxt-link
-		:to="`/jurisdictions/${title.replace(' ', '-')}`"
+		:to="`/jurisdictions/${link}`"
 		class="jurisdiction"
 		:class="{
 			'jurisdiction--active':
-				active.toLowerCase() === title.toLowerCase().replace(' ', '-'),
+				active.toLowerCase() === link.toLowerCase().replace(' ', '-'),
 			'jurisdiction--large': type === 'large',
 		}"
 	>
@@ -13,7 +13,7 @@
 			<IconArrowRight
 				:width="type === 'large' ? 72 : 36"
 				:height="type === 'large' ? 68 : 34"
-				:strokeWidth="type === 'large' ? 1 : 2"
+				:stroke-width="type === 'large' ? 1 : 2"
 				class="icon-arrow"
 			/>
 		</div>
@@ -26,20 +26,33 @@ import IconArrowRight from '@/components/icons/icon-arrow-right'
 
 export default {
 	components: { IconArrowRight },
-	props: { image: String, title: String, active: String, type: String },
+	props: {
+		image: String,
+		link: String,
+		title: String,
+		active: String,
+		type: String,
+	},
 }
 </script>
 
 <style lang="scss">
 .jurisdiction {
-	@apply opacity-75;
+	@apply opacity-75 flex-shrink-0 flex-grow-0 mb-24;
+	max-width: 120px;
 	transition: all 0.5s ease;
+
+	@screen lg {
+		height: 210px;
+	}
 
 	&--active,
 	&:hover {
-		@apply opacity-100;
+		@apply opacity-100 relative;
 
-		transform: translateY(-20%);
+		@screen lg {
+			transform: translateY(-20%);
+		}
 
 		&::after {
 			opacity: 1 !important;
@@ -53,24 +66,45 @@ export default {
 		content: ' ';
 		width: 0px;
 		left: 50%;
-		bottom: -24px;
 		transform: translateX(-50%);
 		transition: width 0.5s ease;
+
+		@screen lg {
+			bottom: -24px;
+		}
 	}
 
 	img {
-		@apply rounded-full;
+		@apply rounded-full bg-alt-100;
 
-		width: 162px;
-		height: 162px;
+		width: 120px;
+		height: 120px;
+
+		@screen lg {
+			width: 162px;
+			height: 162px;
+		}
 	}
 
 	&--large {
-		@apply mx-24 my-24;
+		@apply m-12;
+		max-width: 150px;
+		height: 250px;
+
+		@screen lg {
+			@apply mx-24 my-24;
+			max-width: 302px;
+			height: 400px;
+		}
 
 		img {
-			width: 302px;
-			height: 302px;
+			width: 150px;
+			height: 150px;
+
+			@screen lg {
+				width: 302px;
+				height: 302px;
+			}
 		}
 	}
 }

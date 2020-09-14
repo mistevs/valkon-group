@@ -40,12 +40,20 @@ body {
 }
 
 .constrain {
+	@apply mx-auto px-6;
 	max-width: 1280px;
-	@apply mx-auto;
+
+	@screen lg {
+		@apply px-0;
+	}
 
 	&--large {
+		@apply mx-auto px-6;
 		max-width: 1600px;
-		@apply mx-auto;
+
+		@screen lg {
+			@apply px-0;
+		}
 	}
 }
 
@@ -118,21 +126,21 @@ body {
 }
 
 h1 {
-	@apply text-2xl font-light;
+	@apply text-xl font-light;
 
 	max-width: 425px;
 	line-height: 70%;
 }
 
 h2 {
-	@apply text-xl font-normal;
+	@apply text-lg font-normal;
 
 	// max-width: 402px;
 	line-height: 88%;
 }
 
 h3 {
-	@apply text-lg font-normal tracking-wide;
+	@apply text-big font-normal tracking-wide;
 
 	max-width: 545px;
 	line-height: 88%;
@@ -147,8 +155,24 @@ h3 {
 }
 
 header {
-	@apply absolute;
 }
 
 section {
+}
+
+.content-wrapper {
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.booklet-preview {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	height: 400px;
+
+	@screen lg {
+		height: auto;
+	}
 }

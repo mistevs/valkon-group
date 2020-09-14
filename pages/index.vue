@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="content">
-			<section class="flex constrain">
+			<section class="flex constrain flex-col lg:flex-row px-6 lg:px-0">
 				<div class="content--left">
 					<h1>More than money</h1>
 					<h3 class="mt-16">
@@ -22,19 +22,21 @@
 						/>
 					</div>
 				</div>
-				<div class="content--right ml-auto relative">
+				<div class="content--right lg:ml-auto relative">
 					<IconMarkLarge
-						waterColor="#C38765"
-						iconColor="#C38765"
-						pinColor="#C38765"
+						water-color="#C38765"
+						icon-color="#C38765"
+						pin-color="#C38765"
+						width="50"
+						height="50"
 					/>
 				</div>
 			</section>
-			<section class="flex mt-56 constrain">
+			<section class="flex mt-0 lg:mt-56 constrain px-6 lg:px-0">
 				<div class=""></div>
-				<div class="ml-auto flex items-end">
+				<nuxt-link to="/jurisdictions" class="ml-auto flex items-end">
 					<IconPin />
-					<div class="pl-6 ml-6 border-l-2">
+					<div class="pl-6 ml-6 border-l-2 border-highlight">
 						<p class="font-semibold text-sm mt-24">
 							Featured Jurisdiction
 						</p>
@@ -42,43 +44,10 @@
 							Switzerland <IconArrowRight />
 						</h3>
 					</div>
-				</div>
+				</nuxt-link>
 			</section>
-			<section class="bg-angle--right mt-56 pb-32">
-				<div class="constrain flex justify-around">
-					<card
-						no="1"
-						title="Company Formation: Jurisdictions"
-						:icon="'IconStructure'"
-						description="We’ll analyze the current geopolitical landscape and
-						financial laws to determine the best jurisdictions and
-						countries to incorporate your businesses."
-					/>
-					<card
-						no="2"
-						title="Company Management"
-						:icon="'IconArrow'"
-						description="We’ll analyze the current geopolitical landscape and
-						financial laws to determine the best jurisdictions and
-						countries to incorporate your businesses."
-					/>
-					<card
-						no="3"
-						title="Legal & Business Consultancy"
-						:icon="'IconScale'"
-						description="We’ll analyze the current geopolitical landscape and
-						financial laws to determine the best jurisdictions and
-						countries to incorporate your businesses."
-					/>
-					<card
-						no="4"
-						title="Lifestyle & Relocation"
-						:icon="'IconGlobe'"
-						description="We’ll analyze the current geopolitical landscape and
-						financial laws to determine the best jurisdictions and
-						countries to incorporate your businesses."
-					/>
-				</div>
+			<section class="bg-angle--right mt-24 lg:mt-56 pb-32">
+				<services />
 			</section>
 		</div>
 	</div>
@@ -89,8 +58,7 @@ import SButton from '@/components/button'
 import IconMarkLarge from '@/components/icons/icon-mark-large'
 import IconPin from '@/components/icons/icon-pin'
 import IconArrowRight from '@/components/icons/icon-arrow-right'
-
-import Card from '@/components/card'
+import Services from '@/components/services'
 
 export default {
 	components: {
@@ -98,22 +66,24 @@ export default {
 		IconMarkLarge,
 		IconPin,
 		IconArrowRight,
-		Card,
+		Services,
 	},
 }
 </script>
 
 <style lang="scss" scoped>
 .content-wrapper {
-	background: url('/images/swiss-bg.jpg') no-repeat center top;
+	background: url('/images/pages/swiss-bg.jpg') no-repeat center top;
 }
 
 .content--right {
 	svg {
-		@apply absolute;
+		@screen lg {
+			@apply absolute;
 
-		top: -40px;
-		right: -120px;
+			top: -40px;
+			right: -120px;
+		}
 	}
 }
 </style>

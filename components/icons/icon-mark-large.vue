@@ -1,16 +1,16 @@
 <template>
 	<icon
-		iconName="large mark"
+		icon-name="large mark"
 		:width="width"
 		:height="height"
-		:viewBox="`0 0 666 666`"
-		iconColor="none"
+		:view-box="`0 0 666 666`"
+		icon-color="none"
 	>
 		<!-- circle fill -->
 		<mask
 			id="mask0"
 			mask-type="alpha"
-			maskUnits="userSpaceOnUse"
+			mask-units="userSpaceOnUse"
 			x="0"
 			y="0"
 			:width="width"
