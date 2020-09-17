@@ -48,7 +48,7 @@ body {
 	}
 
 	&--large {
-		@apply mx-auto px-6;
+		@apply mx-auto px-8;
 		max-width: 1600px;
 
 		@screen lg {
@@ -130,6 +130,10 @@ h1 {
 
 	max-width: 425px;
 	line-height: 70%;
+
+	@screen lg {
+		@apply text-2xl;
+	}
 }
 
 h2 {
@@ -137,6 +141,10 @@ h2 {
 
 	// max-width: 402px;
 	line-height: 88%;
+
+	@screen lg {
+		@apply text-xl;
+	}
 }
 
 h3 {
@@ -144,6 +152,10 @@ h3 {
 
 	max-width: 545px;
 	line-height: 88%;
+
+	@screen lg {
+		@apply text-lg;
+	}
 
 	&.tall {
 		line-height: 133%;
@@ -163,16 +175,11 @@ section {
 .content-wrapper {
 	background-repeat: no-repeat;
 	background-position: center top;
+	background-size: contain;
 }
 
 .booklet-preview {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-
-	height: 400px;
-
-	@screen lg {
-		height: auto;
-	}
 }

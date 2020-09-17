@@ -1,18 +1,12 @@
 <template>
 	<div class="content">
 		<section class="constrain text-light">
-			<h2 class="mt-20 max-w-full pb-40">Singapore</h2>
+			<h2 class="mt-20 max-w-full pb-40">Jurisdictions</h2>
 		</section>
-		<section class="bg-secondary-200 constrain--large">
-			<jurisdiction-description />
+		<section class="bg-secondary-200 constrain--large py-20">
+			<jurisdictions type="large" />
 		</section>
-		<section class="bg-secondary-200 constrain--large">
-			<jurisdictions
-				class="constrain py-12 lg:pt-40 lg:pb-20"
-				active="singapore"
-			/>
-		</section>
-		<section class="bg-secondary-200 pt-24 pb-40">
+		<section class="bg-secondary-200 pt-24 pb-16">
 			<h3 class="constrain">Why work with us?</h3>
 			<div class="flex constrain mt-24">
 				<card
@@ -41,22 +35,16 @@
 </template>
 
 <script>
+import SectionHeader from '@/components/section-header'
 import Jurisdictions from '@/components/jurisdictions'
 import Card from '@/components/card'
-import JurisdictionDescription from '@/components/jurisdiction-description'
-
 export default {
-	components: {
-		Jurisdictions,
-		Card,
-		JurisdictionDescription,
-	},
+	components: { SectionHeader, Jurisdictions, Card },
 }
 </script>
 
 <style lang="scss" scoped>
-.content-wrapper,
-.booklet-preview {
-	background-image: url('/images/jurisdictions/backgrounds/estonia.jpg');
+.content-wrapper {
+	background: url('/images/pages/clients-bg.jpg') no-repeat center top;
 }
 </style>

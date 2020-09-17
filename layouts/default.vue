@@ -1,7 +1,7 @@
 <template>
 	<div class="site-wrapper">
 		<app-header />
-		<Nuxt class="content-wrapper" />
+		<Nuxt class="content-wrapper" :class="$route.params.pathMatch" />
 		<app-footer />
 	</div>
 </template>

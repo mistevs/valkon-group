@@ -1,38 +1,15 @@
 <template>
-	<div class="constrain p-12 lg:p-40 pb-0">
-		<h3 class="tall wide mb-20">
-			Estonia belongs to the European Union, which offers several benefits
-			for opening a company including effective legislation and easier
-			access to funding.
-		</h3>
+	<div class="jurisdiction-description constrain p-12 lg:p-40 pb-0 px-0">
+		<h3 class="tall wide mb-20" v-if="excerpt" v-html="excerpt"></h3>
 		<div class="flex flex-col mb-6 lg:flex-row lg:mb-20">
-			<div class="font-body lg:w-5/12">
-				<p class="mb-8">
-					Requires corporations to pay taxes only on their distributed
-					dividends. In addition to no corporate tax (unless there is
-					a dividend), there is no VAT for transactions performed
-					outside the EU territory as well as no income tax up until a
-					certain salary amount.
-				</p>
-				<p class="mb-8">
-					Due to its tax system, Estonia is an ideal place for new
-					start-ups and tech companies that are focused on business
-					growth as companies will not pay any taxes for the money
-					they earn or re-invest.
-				</p>
-				<p>
-					Valkon Group will provide expert advice in regards to
-					registering your company in Estonia, while assessing all
-					advantages and disadvantages for your particular business.
-				</p>
-			</div>
+			<div class="font-body lg:w-5/12" v-html="description"></div>
 			<div
-				class="booklet-preview bg-secondary-300 lg:w-5/12 lg:ml-auto mt-12 lg:mt-0 p-6 lg:p-12 text-light relative"
+				class="booklet-preview self-end bg-secondary-300 lg:w-5/12 lg:ml-auto mt-12 lg:mt-0 p-6 lg:p-12 text-light relative"
 			>
 				<h3 class="tracking-wide">
 					How to set up<br />
 					your business <br />
-					in Estonia
+					in {{ title }}
 				</h3>
 
 				<div
@@ -47,10 +24,11 @@
 			class="flex flex-col lg:flex-row border-b-2 border-primary-200 pb-20"
 		>
 			<p class="lg:w-5/12">
-				To request a brochure with the Company Key Facts and How to Set
-				Up Your Business in Estonia, please submit your email here.
+				To request a brochure with the key information about
+				<strong class="font-bold">how to set up your business</strong>
+				in {{ title }}, please submit your email here.
 			</p>
-			<div class="lg:ml-auto lg:w-5/12 mt-6 lg:mt-0">
+			<div class="booklet-ask lg:ml-auto lg:w-5/12 mt-6 lg:mt-0">
 				<form>
 					<input
 						type="text"
@@ -68,5 +46,40 @@
 </template>
 
 <script>
-export default {}
+export default {
+	props: { title: String, description: String, excerpt: String },
+}
 </script>
+
+<style lang="scss" scoped>
+// .jurisdiction-description {
+p,
+::v-deep p {
+	@apply mb-8;
+}
+
+ul {
+	@apply ml-12 mb-8 mt-4;
+}
+
+li {
+	@apply my-2;
+	list-style: disc;
+}
+
+.booklet-preview,
+.booklet-ask {
+	@screen lg {
+		max-width: 420px;
+	}
+}
+
+.booklet-preview {
+	height: 400px;
+
+	@screen lg {
+		height: 630px;
+	}
+}
+// }
+</style>

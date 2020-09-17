@@ -1,11 +1,11 @@
 <template>
 	<div class="content">
 		<section class="constrain text-light">
-			<h2 class="mt-20 max-w-full pb-40">About Us</h2>
+			<h2 class="mt-12 lg:mt-20 max-w-full pb-20 lg:pb-40">About Us</h2>
 		</section>
 		<section class="bg-secondary-200 constrain--large">
-			<div class="flex constrain p-40">
-				<div class="w-5/12">
+			<div class="flex flex-col lg:flex-row py-12 lg:p-40">
+				<div class="lg:w-5/12">
 					<p class="mb-4">
 						<span>D</span>oing business with Valkon Group means more
 						than money - we guarantee trust and excellence. Our team
@@ -33,7 +33,7 @@
 						structure, taxation, and international financial flows.
 					</p>
 				</div>
-				<div class="flex flex-wrap w-5/12 ml-32">
+				<div class="flex flex-wrap my-12 lg:my-0 lg:w-5/12 lg:ml-32">
 					<div class="w-1/2 bg-secondary-300 p-9">
 						<h2>12</h2>
 						<p class="mt-4">Years in business</p>
@@ -60,13 +60,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex constrain px-40">
-				<h3 class="w-5/12 tracking-wide tall">
+			<div class="flex flex-col lg:flex-row constrain lg:px-40">
+				<h3 class="lg:w-5/12 tracking-wide tall">
 					Doing business with Valkon Group means more than money - we
 					guarantee trust and excellence.
 				</h3>
 
-				<div class="w-5/12 ml-32">
+				<div class="mt-12 lg:mt-0 lg:w-5/12 lg:ml-32">
 					<p class="mb-4">
 						Valkon Group specialises in the formation and management
 						of companies in the UK and overseas. While headquartered
@@ -91,29 +91,7 @@
 			</div>
 		</section>
 		<section class="bg-secondary-200 pt-24 pb-16">
-			<h3 class="constrain">Why work with us?</h3>
-			<div class="flex constrain mt-24">
-				<card
-					no="1"
-					title="Better prices, quick, and easy"
-					icon="IconGlobe"
-				></card>
-				<card
-					no="2"
-					title="Self-service portal"
-					icon="IconGlobe"
-				></card>
-				<card
-					no="3"
-					title="Dedicated success manager"
-					icon="IconGlobe"
-				></card>
-				<card
-					no="4"
-					title="Secure, Private & Confidential"
-					icon="IconGlobe"
-				></card>
-			</div>
+			<why-work />
 		</section>
 	</div>
 </template>
@@ -122,8 +100,10 @@
 import SectionHeader from '@/components/section-header'
 import Jurisdictions from '@/components/jurisdictions'
 import Card from '@/components/card'
+import WhyWork from '@/components/why-work'
+
 export default {
-	components: { SectionHeader, Jurisdictions, Card },
+	components: { SectionHeader, Jurisdictions, Card, WhyWork },
 }
 </script>
 

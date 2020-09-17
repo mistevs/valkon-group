@@ -6,49 +6,49 @@
 		<jurisdiction
 			title="estonia"
 			link="estonia"
-			image="/images/jurisdictions/icons/estonia.png"
+			image="estonia"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="Switzerland"
 			link="switzerland"
-			image="/images/jurisdictions/icons/switzerland.png"
+			image="switzerland"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="United Arab Emirates (UAE)"
-			link="united-arab-emirites"
-			image="/images/jurisdictions/icons/uae.png"
+			link="united-arab-emirates"
+			image="uae"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="United Kingdom (UK)"
 			link="united-kingdom"
-			image="/images/jurisdictions/icons/uk.png"
+			image="uk"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="British Virgin Islands (BVI)"
 			link="british-virgin-islands"
-			image="/images/swiss-bg.jpg"
+			image="bvi"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="Seychelles"
 			link="seychelles"
-			image="/images/swiss-bg.jpg"
+			image="seychelles"
 			:active="active"
 			:type="type"
 		/>
 		<jurisdiction
 			title="Singapore"
 			link="singapore"
-			image="/images/swiss-bg.jpg"
+			image="singapore"
 			:active="active"
 			:type="type"
 		/>
@@ -68,9 +68,5 @@ export default {
 	&--large {
 		@apply flex-wrap justify-center;
 	}
-}
-
-.jurisdiction:last-child {
-	@apply mb-0;
 }
 </style>

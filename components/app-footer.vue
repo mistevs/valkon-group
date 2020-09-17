@@ -3,7 +3,7 @@
 		<contact />
 		<footer class="bg-secondary-300 lg:pb-40">
 			<div class="footer-wrapper">
-				<nav class="mt-40">
+				<nav class="mt-12 lg:mt-40">
 					<ul
 						class="flex flex-col lg:flex-row py-8 constrain border-t-2 border-b-2 font-semibold"
 					>
@@ -34,7 +34,7 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="mt-20 constrain pb-40">
+				<div class="mt-20 constrain pb-12 lg:pb-40">
 					<div class="flex items-center">
 						<IconValkon class="mr-3" />
 						<IconMark />

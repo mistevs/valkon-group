@@ -9,7 +9,10 @@
 		}"
 	>
 		<div class="relative">
-			<img :src="image" />
+			<img
+				:src="`/images/jurisdictions/icons/${image}.png`"
+				:srcset="`/images/jurisdictions/icons/${image}.png 1x, /images/jurisdictions/icons/${image}@2x.png 2x`"
+			/>
 			<IconArrowRight
 				:width="type === 'large' ? 72 : 36"
 				:height="type === 'large' ? 68 : 34"
@@ -43,7 +46,14 @@ export default {
 	transition: all 0.5s ease;
 
 	@screen lg {
-		height: 210px;
+		@apply mb-0;
+
+		max-width: 160px;
+		height: 275px;
+	}
+
+	&:last-child {
+		@apply mb-0;
 	}
 
 	&--active,

@@ -82,6 +82,7 @@ module.exports = {
 			},
 		},
 	},
+	important: true,
 	variants: {},
 	plugins: [],
 	purge: {

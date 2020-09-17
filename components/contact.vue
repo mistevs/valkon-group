@@ -1,6 +1,6 @@
 <template>
 	<div class="contact bg-light">
-		<div class="flex flex-col lg:flex-row lg:constrain px-0">
+		<div class="flex flex-col lg:flex-row constrain px-0 w-full">
 			<div
 				class="contact-dark bg-primary-200 text-light px-6 py-12 lg:p-40 lg:pl-0 lg:pr-24"
 			>
@@ -34,9 +34,9 @@
 				</div>
 				<!-- <div class="mt-16"></div> -->
 			</div>
-			<div class="py-12 px-6 lg:py-40 lg:px-32 w-full">
+			<div class="py-12 lg:py-40 lg:px-32 w-full">
 				<h3>Hello! Let’s get in touch –</h3>
-				<form class="mt-24">
+				<form class="mt-12 lg:mt-24">
 					<input type="text" placeholder="Your Name" />
 					<input type="text" placeholder="Your Email" />
 					<input type="text" placeholder="Your Company" />

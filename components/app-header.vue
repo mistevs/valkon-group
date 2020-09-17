@@ -22,7 +22,7 @@
 			</ul>
 		</div>
 		<nav
-			class="constrain font-semibold"
+			class="constrain font-semibold lg:flex"
 			:class="showNav ? '__showing' : ''"
 		>
 			<nuxt-link to="/" class="flex items-center mr-8"
@@ -35,7 +35,7 @@
 				/>
 			</nuxt-link>
 			<ul
-				class="lg:items-center tracking-wide flex-col lg:flex-row lg:flex"
+				class="lg:items-center tracking-wide flex-col lg:flex-row lg:flex lg:flex-grow"
 				:class="showNav ? 'block' : 'hidden'"
 				@click="showNav = false"
 			>
@@ -139,22 +139,14 @@ header {
 			svg {
 				@apply text-dark;
 			}
-		}
 
-		// @screen lg {
-		// 	@apply w-auto bg-transparent static top-auto left-auto h-auto z-auto;
-		// }
+			> ul {
+				@apply mt-6;
 
-		> ul {
-			@apply mt-6;
-
-			> li > {
-				a {
-					@apply pl-0 py-4 border-b border-primary-200 block;
-
-					// @screen lg {
-					// 	@apply py-1 border-0 inline-block;
-					// }
+				> li > {
+					a {
+						@apply pl-0 py-4 border-b border-primary-200 block;
+					}
 				}
 			}
 		}
@@ -199,6 +191,12 @@ nav {
 					transform: translateX(-50%);
 					transition: all 0.5s ease;
 				}
+			}
+		}
+
+		a {
+			@screen lg {
+				@apply px-5;
 			}
 		}
 	}
