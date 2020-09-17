@@ -43,7 +43,11 @@
 					<textarea
 						placeholder="Let us know how can we help?"
 					></textarea>
-					<s-button class="w-full" text="Submit" type="outline" />
+					<s-button
+						class="w-full max-w-none"
+						text="Submit"
+						type="outline"
+					/>
 				</form>
 			</div>
 		</div>

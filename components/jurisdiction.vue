@@ -97,12 +97,12 @@ export default {
 	}
 
 	&--large {
-		@apply m-12;
+		@apply m-6;
 		max-width: 150px;
 		height: 250px;
 
 		@screen lg {
-			@apply mx-24 my-24;
+			@apply mx-12 my-24;
 			max-width: 302px;
 			height: 400px;
 		}

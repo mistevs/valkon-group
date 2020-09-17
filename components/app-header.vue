@@ -55,26 +55,19 @@
 				<li class="lg:ml-auto relative has-dropdown">
 					<nuxt-link to="/services" class="">Services</nuxt-link>
 					<ul
-						class="dropdown absolute top-0 bg-secondary-200 border-4 border-secondary-300 shadow text-primary-100 font-normal"
+						class="dropdown absolute bg-secondary-200 border-4 border-secondary-300 shadow text-primary-100 font-normal"
 					>
 						<li>
 							<nuxt-link
-								to="/jurisdictions/"
-								class="py-2 inline-block border-b-2 border-secondary-300"
-								>Jurisdictions</nuxt-link
+								to="/services/"
+								class="py-2 block border-b-2 border-secondary-300"
+								>Overview</nuxt-link
 							>
 						</li>
 						<li>
 							<nuxt-link
 								to="/jurisdictions/"
-								class="py-2 inline-block border-b-2 border-secondary-300"
-								>Jurisdictions</nuxt-link
-							>
-						</li>
-						<li>
-							<nuxt-link
-								to="/jurisdictions/"
-								class="py-2 inline-block"
+								class="py-2 block border-b-2 border-secondary-300"
 								>Jurisdictions</nuxt-link
 							>
 						</li>
