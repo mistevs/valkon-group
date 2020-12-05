@@ -1,5 +1,5 @@
 .button {
-	@apply py-3 block text-center capitalize font-semibold;
+	@apply py-3 block text-center capitalize font-semibold cursor-pointer;
 
 	@screen lg {
 		min-width: 302px;

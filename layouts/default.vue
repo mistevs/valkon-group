@@ -1,6 +1,7 @@
 <template>
 	<div class="site-wrapper">
 		<app-header />
+		<notifications />
 		<Nuxt class="content-wrapper" :class="$route.params.pathMatch" />
 		<app-footer />
 	</div>
@@ -9,9 +10,10 @@
 <script>
 import AppHeader from '@/components/app-header.vue'
 import AppFooter from '@/components/app-footer.vue'
+import Notifications from '~/components/notifications.vue'
 
 export default {
-	components: { AppHeader, AppFooter },
+	components: { AppHeader, AppFooter, Notifications },
 }
 </script>
 

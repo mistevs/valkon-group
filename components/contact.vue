@@ -40,18 +40,88 @@
 			</div>
 			<div class="py-12 lg:py-40 px-4 lg:px-32 w-full">
 				<h3>Hello! Let’s get in touch –</h3>
-				<form class="mt-12 lg:mt-24">
-					<input type="text" placeholder="Your Name" />
-					<input type="text" placeholder="Your Email" />
-					<input type="text" placeholder="Your Company" />
-					<textarea
-						placeholder="Let us know how can we help?"
-					></textarea>
-					<s-button
-						class="w-full max-w-none"
-						text="Submit"
-						type="outline"
-					/>
+				<form
+					class="mt-12 lg:mt-24"
+					action="/success"
+					@submit.prevent="submitForm"
+					method="POST"
+					name="contact"
+					netlify-honeypot="dontfill"
+					data-netlify="true"
+				>
+					<input type="hidden" name="form-name" value="contact" />
+					<span class="hidden"><input name="dontfill" /></span>
+					<div class="input-row">
+						<div class="input-wrapper">
+							<input
+								type="textbox"
+								name="name"
+								v-model="form.name"
+								placeholder="Your Full Name"
+							/>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-wrapper">
+							<input
+								type="textbox"
+								name="email"
+								v-model="form.email"
+								placeholder="Your Email"
+							/>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-wrapper">
+							<input
+								type="textbox"
+								name="company"
+								v-model="form.company"
+								placeholder="Your Company"
+							/>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-wrapper">
+							<input
+								type="textbox"
+								name="phone"
+								v-model="form.phone"
+								placeholder="Your Phone Number"
+							/>
+						</div>
+					</div>
+					<div class="input-row noflex">
+						<div class="input-wrapper noborder">
+							<p class="label">How can we help?</p>
+							<textarea
+								name="notes"
+								v-model="form.notes"
+							></textarea>
+						</div>
+					</div>
+					<div class="submit-wrapper">
+						<!-- <s-button
+							class="w-full max-w-none"
+							text="Submit"
+							type="outline"
+							v-track:click="{
+								category: 'contact',
+								label: 'submit',
+							}"
+						/> -->
+						<input
+							class="button button--outline w-full max-w-none"
+							type="submit"
+							id="submitFormButton"
+							name="submit"
+							:value="submitting ? 'Sending ...' : 'Submit'"
+							v-track:click="{
+								category: 'contact',
+								label: 'submit',
+							}"
+						/>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -59,10 +129,97 @@
 </template>
 
 <script>
-import SButton from '@/components/button'
+import axios from 'axios'
 
 export default {
-	components: { SButton },
+	components: {},
+	data: () => ({
+		form: { submitting: false },
+	}),
+	methods: {
+		// eslint-disable-next-line
+		submitForm() {
+			this.form.submitting = true
+			if (!this.form.name) {
+				this.$store.dispatch('addNotification', {
+					type: 'error',
+					text:
+						'Please fill out your name so we know who to contact.',
+				})
+				this.$ga.event({
+					eventCategory: 'contact',
+					eventLabel: 'missing name',
+					eventAction: 'error notification',
+				})
+				this.form.submitting = false
+				return false
+			} else if (!this.form.email) {
+				this.$store.dispatch('addNotification', {
+					type: 'error',
+					text:
+						'Please fill out your email address so we can get back to you.',
+				})
+				this.$ga.event({
+					eventCategory: 'contact',
+					eventLabel: 'missing email',
+					eventAction: 'error notification',
+				})
+				this.form.submitting = false
+				return false
+				// } else if (!this.form.company) {
+				// this.$store.dispatch('addNotification', { 'type' : 'error', 'text' : 'Please fill out your email address so we can get back to you.' })
+			} else if (!this.form.phone) {
+				this.$store.dispatch('addNotification', {
+					type: 'error',
+					text:
+						'Please fill out your phone number so we can get back to you.',
+				})
+				this.$ga.event({
+					eventCategory: 'contact',
+					eventLabel: 'missing phone',
+					eventAction: 'error notification',
+				})
+				this.form.submitting = false
+				return false
+			} else if (!this.form.notes) {
+				this.$store.dispatch('addNotification', {
+					type: 'error',
+					text: 'Please let us know how best to help you.',
+				})
+				this.$ga.event({
+					eventCategory: 'contact',
+					eventLabel: 'missing notes',
+					eventAction: 'error notification',
+				})
+				this.form.submitting = false
+				return false
+			}
+
+			const axiosConfig = {
+				header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			}
+			axios
+				.post(
+					'/',
+					this.encode({
+						'form-name': 'contact',
+						...this.form,
+					}),
+					axiosConfig
+				)
+				.then(() => {
+					this.$ga.event({
+						eventCategory: 'contact',
+						eventLabel: 'contact success',
+						eventAction: 'success',
+					})
+					this.$router.push('/success')
+				})
+				.finally(() => {
+					this.form.submitting = false
+				})
+		},
+	},
 }
 </script>
 
