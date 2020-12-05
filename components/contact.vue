@@ -4,7 +4,7 @@
 			<div
 				class="contact-dark bg-primary-200 text-light px-6 py-12 lg:p-40 lg:pl-0 lg:pr-24"
 			>
-				<h3>Contact Valkon</h3>
+				<h3>Contact ValKon Group</h3>
 				<h2 class="mt-12 lg:mt-24">
 					How can we help build your legacy?
 				</h2>
@@ -34,7 +34,7 @@
 				</div>
 				<!-- <div class="mt-16"></div> -->
 			</div>
-			<div class="py-12 lg:py-40 lg:px-32 w-full">
+			<div class="py-12 lg:py-40 px-4 lg:px-32 w-full">
 				<h3>Hello! Let’s get in touch –</h3>
 				<form class="mt-12 lg:mt-24">
 					<input type="text" placeholder="Your Name" />

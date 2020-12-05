@@ -5,8 +5,8 @@
 				<div class="content--left">
 					<h1>More than money</h1>
 					<h3 class="mt-16">
-						Our suite of corporate services for startups and
-						companies ensures you are ready to expand globally
+						Our suite of corporate services for <br />startups and
+						companies ensures <br />you are ready to expand globally
 					</h3>
 					<div class="mt-16">
 						<s-button
@@ -27,21 +27,27 @@
 						water-color="#C38765"
 						icon-color="#C38765"
 						pin-color="#C38765"
-						width="50"
-						height="50"
+						width="500"
+						height="500"
 					/>
 				</div>
 			</section>
-			<section class="flex mt-0 lg:mt-56 constrain px-6 lg:px-0">
+			<section
+				class="hidden lg:flex mt-0 lg:mt-32 constrain px-6 lg:px-0"
+			>
 				<div class=""></div>
-				<nuxt-link to="/jurisdictions" class="ml-auto flex items-end">
-					<IconPin />
+				<nuxt-link
+					:to="`/jurisdictions/${jurisdictions[index].link}`"
+					class="ml-auto flex items-end"
+				>
+					<IconPin class="jurisdiction__icon" />
 					<div class="pl-6 ml-6 border-l-2 border-highlight">
 						<p class="font-semibold text-sm mt-24">
 							Featured Jurisdiction
 						</p>
-						<h3 class="font-medium">
-							Switzerland <IconArrowRight />
+						<h3 class="font-regular jurisdiction__title">
+							{{ jurisdictions[index].title }}
+							<IconArrowRight />
 						</h3>
 					</div>
 				</nuxt-link>
@@ -68,6 +74,45 @@ export default {
 		IconArrowRight,
 		Services,
 	},
+	data: () => ({
+		jurisdictions: [
+			{
+				title: 'Switzerland',
+				link: 'switzerland',
+			},
+			{
+				title: 'Estonia',
+				link: 'estonia',
+			},
+			{
+				title: 'United Arab Emirates',
+				link: 'united-arab-emirates',
+			},
+			{
+				title: 'United Kingdom',
+				link: 'united-kingdom',
+			},
+			{
+				title: 'British Virgin Islands (BVI)',
+				link: 'british-virgin-islands',
+			},
+			{
+				title: 'Seychelles',
+				link: 'seychelles',
+			},
+			{
+				title: 'Singapore',
+				link: 'singapore',
+			},
+		],
+		index: 0,
+	}),
+	mounted() {
+		setInterval(() => {
+			if (this.index + 1 > this.jurisdictions.length - 1) this.index = -1
+			this.index++
+		}, 1500)
+	},
 }
 </script>
 
@@ -78,12 +123,31 @@ export default {
 
 .content--right {
 	svg {
-		@screen lg {
-			@apply absolute;
+		@apply hidden;
 
-			top: -40px;
-			right: -120px;
+		@screen md {
+			@apply absolute block;
+			right: 0;
+			// right: -50px;
+		}
+
+		@screen xxl {
+			// right: -150px;
+			top: 0;
+
+			// top: -40px;
+			// right: -120px;
 		}
 	}
+}
+
+.jurisdiction__icon {
+	margin-bottom: 30px;
+}
+
+.jurisdiction__title {
+	width: 275px;
+	height: 60px;
+	flex: 0 0 auto;
 }
 </style>

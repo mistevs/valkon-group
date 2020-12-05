@@ -7,7 +7,8 @@
 			<jurisdictions type="large" />
 		</section>
 		<section class="bg-secondary-200 pt-24 pb-16">
-			<h3 class="constrain">Why work with us?</h3>
+			<why-work></why-work>
+			<!-- <h3 class="constrain">Why work with us?</h3>
 			<div class="flex constrain mt-24">
 				<card
 					no="1"
@@ -29,7 +30,7 @@
 					title="Secure, Private & Confidential"
 					icon="IconGlobe"
 				></card>
-			</div>
+			</div> -->
 		</section>
 	</div>
 </template>

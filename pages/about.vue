@@ -7,10 +7,10 @@
 			<div class="flex flex-col lg:flex-row py-12 lg:p-40">
 				<div class="lg:w-5/12">
 					<p class="mb-4">
-						<span>D</span>oing business with Valkon Group means more
+						<span>D</span>oing business with ValKon Group means more
 						than money - we guarantee trust and excellence. Our team
 						would like to invite you to explore the wide range of
-						services that Valkon Group offers for you to expand and
+						services that ValKon Group offers for you to expand and
 						maximise your business.
 					</p>
 
@@ -25,7 +25,7 @@
 
 					<p>
 						Our primary focus is to serve our clients and promote
-						their financial success. In doing so, Valkon Group
+						their financial success. In doing so, ValKon Group
 						builds strong client relationships based on trust and
 						service excellence with a personal touch. Our
 						multi-language team has a long track record of global
@@ -62,13 +62,13 @@
 			</div>
 			<div class="flex flex-col lg:flex-row constrain lg:px-40">
 				<h3 class="lg:w-5/12 tracking-wide tall">
-					Doing business with Valkon Group means more than money - we
+					Doing business with ValKon Group means more than money - we
 					guarantee trust and excellence.
 				</h3>
 
 				<div class="mt-12 lg:mt-0 lg:w-5/12 lg:ml-32">
 					<p class="mb-4">
-						Valkon Group specialises in the formation and management
+						ValKon Group specialises in the formation and management
 						of companies in the UK and overseas. While headquartered
 						in London, our teams are based locally in each of our
 						jurisdictions allowing us to offer our clients from all
@@ -79,7 +79,7 @@
 					</p>
 
 					<p>
-						At Valkon Group, we are dedicated to understanding our
+						At ValKon Group, we are dedicated to understanding our
 						clients’ individual needs in order to ensure that our
 						clients will benefit from the best solutions tailored
 						exclusively to their individual needs. We value

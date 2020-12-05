@@ -17,7 +17,8 @@
 			/>
 		</section>
 		<section class="bg-secondary-200 pt-24 pb-40">
-			<h3 class="constrain">Why work with us?</h3>
+			<why-work></why-work>
+			<!-- <h3 class="constrain">Why work with us?</h3>
 			<div class="flex constrain mt-24">
 				<card
 					no="1"
@@ -39,7 +40,7 @@
 					title="Secure, Private & Confidential"
 					icon="IconGlobe"
 				></card>
-			</div>
+			</div> -->
 		</section>
 	</div>
 </template>
@@ -69,7 +70,7 @@ export default {
 					description: `
 					<p>The main advantage for starting your business in Estonia is its tax system which requires corporations to pay taxes only on their distributed dividends. In addition to no corporate tax (unless there is a dividend), there is no VAT for transactions performed outside  the EU territory as well as no income tax up until a certain salary amount.</p>
 					<p>Due to its tax system, Estonia is an ideal place for new start-ups and tech companies that are focused on business growth as companies will not pay any taxes for the money they earn or re-invest.</p>
-					<p>Valkon Group will provide expert advice in regards to registering your company in Estonia, while assessing all advantages and disadvantages for your particular business.</p>
+					<p>ValKon Group will provide expert advice in regards to registering your company in Estonia, while assessing all advantages and disadvantages for your particular business.</p>
 					`,
 				},
 				switzerland: {
@@ -79,7 +80,7 @@ export default {
 					description: `
 					<p>Despite being a small country, Switzerland has headquarters of more than 6,500 foreign companies, including several Fortune 500 companies. The key advantages of opening a Swiss company include low taxation, no capital requirement and a relatively easy and fast set-up process. </p>
 					<p>As a result of the Swiss tax reform (TRAF) that entered into force on January 1, 2020, companies are subject to tax rates that range between 11.9% and 25%, but dividends and capital gains from shareholdings are entitled to participation relief, which means that taxes are significantly reduced or nearly eliminated with such gains. </p>
-					<p>Tax planning is vital in order to benefit from various advantages offered by the Swiss taxation system. Valkon Group specialises in the set-up and management of Swiss companies and will provide expert advice and manage the set-up process in a professional and efficient manner.</p>
+					<p>Tax planning is vital in order to benefit from various advantages offered by the Swiss taxation system. ValKon Group specialises in the set-up and management of Swiss companies and will provide expert advice and manage the set-up process in a professional and efficient manner.</p>
 					`,
 				},
 				'united-arab-emirates': {
@@ -96,7 +97,7 @@ export default {
 						<li>Registration of yachts and ships abroad;</li>
 						<li>Ownership of copyrights, patents and other intellectual property.</li>
 					</ul>
-					<p>The Valkon Group  team in Dubai will meet your needs from initial assessment to business structuring including company formation and management. </p>`,
+					<p>The ValKon Group  team in Dubai will meet your needs from initial assessment to business structuring including company formation and management. </p>`,
 				},
 				'united-kingdom': {
 					title: 'United Kingdom',
@@ -105,7 +106,7 @@ export default {
 					description: `
 					<p>One of the biggest advantages to opening a UK company is a significant reduction in corporation tax, which is currently set at 19%. Suitable structuring will also guarantee significant earnings savings for international companies and high net worth individuals.</p>
 					<p>Another advantage is a company can be established within only a few hours while keeping the setting up and annual corporate administration costs  minimal compared to many other countries.</p>
-					<p>As a UK firm, Valkon Group provides UK corporate, domiciliary, administrative and accounting services to UK companies. Valkon Group experts will ensure that your new company remains compliant under the UK regulations.</p>`,
+					<p>As a UK firm, ValKon Group provides UK corporate, domiciliary, administrative and accounting services to UK companies. ValKon Group experts will ensure that your new company remains compliant under the UK regulations.</p>`,
 				},
 				'british-virgin-islands': {
 					title: 'British Virgin Islands (BVI)',
@@ -116,7 +117,7 @@ export default {
 					<p>The BVI is attractive to foreign investors as it offers no capital gains tax, sales tax or VAT, and no dividends, interest or royalties are required to be paid.</p>
 					<p>Individuals in the British Virgin Islands pay no income tax, wealth tax, inheritance or gift taxes. There are also no land or housing taxes. The payroll tax is between 10% and 14% and split between employer and employee. </p>
 					<p>The government of the British Virgin Islands is known for being stable and established. The law in the territory is based on British Сommon Law and the official business language is English.</p>
-					<p>Valkon Group has extensive experience establishing new businesses in the British Virgin Islands and is well suited to provide expert advice for your company.</p>
+					<p>ValKon Group has extensive experience establishing new businesses in the British Virgin Islands and is well suited to provide expert advice for your company.</p>
 					`,
 				},
 				seychelles: {
@@ -128,7 +129,7 @@ export default {
 					<p>The Seychelles is an independent jurisdiction and is known for its privacy and confidentiality laws. It is also known for its political and economic stability which are equally important for the success of a business.</p>
 					<p>The country has a territorial tax system: profits are only taxed if they are derived or deemed to be derived from a source in the Seychelles. Zero taxation also applies to capital gains, dividends, interest, and stamp duties on business transactions.</p>
 					<p>International business companies are subject to relaxed statutory requirements including no minimum capital requirements and no residency requirement. </p>
-					<p>Valkon Group has extensive experience of international and offshore structures and will present our clients with the best opportunities that suit their needs.</p>
+					<p>ValKon Group has extensive experience of international and offshore structures and will present our clients with the best opportunities that suit their needs.</p>
 					`,
 				},
 				singapore: {
@@ -137,7 +138,7 @@ export default {
 						'Singapore, officially the Republic of Singapore, is a sovereign island city-state in maritime Southeast Asia that is known for its political and economic stability in the region.',
 					description: `
 					<p>Singapore is considered a global hub for finance primarily due to its tax benefits that include a single-tier taxation system, no tax on overseas income, no capital gains or dividend tax, and no tax on assets from inheritance or gifts. Singapore also offers avoidance of Double Taxation Agreements (DTA) between Singapore and other jurisdictions which serve to relieve double taxation of income that is earned in one jurisdiction by a resident of the other jurisdiction.</p>
-					<p>Valkon Group has a deep understanding of our client’s needs and will offer the best solutions to benefit their business. To discuss how Valkon Group can help your business in Singapore, please see below.</p>
+					<p>ValKon Group has a deep understanding of our client’s needs and will offer the best solutions to benefit their business. To discuss how ValKon Group can help your business in Singapore, please see below.</p>
 					`,
 				},
 			},
