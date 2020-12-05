@@ -24,7 +24,11 @@
 					</div>
 					<div class="w-1/2 ml-auto lg:ml-0">
 						<p class="font-medium">Via Email</p>
-						<p class="text-sm">hello@valkongroup.com</p>
+						<p class="text-sm">
+							<a href="mailto:hello@valkon.group"
+								>hello@valkon.group</a
+							>
+						</p>
 						<p class="font-medium mt-16">Via Telephone</p>
 						<p class="text-sm">
 							+44 20 8638 6123

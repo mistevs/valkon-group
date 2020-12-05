@@ -8,7 +8,9 @@
 						class="flex flex-col lg:flex-row py-8 constrain border-t-2 border-b-2 font-semibold"
 					>
 						<li>
-							<nuxt-link to="/private-clients" class="py-8 mr-16"
+							<nuxt-link
+								to="/private-clients"
+								class="py-8 mr-16 pl-0"
 								>For Agents & Partners</nuxt-link
 							>
 						</li>
@@ -28,17 +30,42 @@
 							>
 						</li>
 						<li>
-							<nuxt-link to="/contact" class="py-8"
+							<nuxt-link to="/contact" class="py-8 pr-0"
 								>Contact</nuxt-link
 							>
 						</li>
 					</ul>
 				</nav>
-				<div class="mt-20 constrain pb-12 lg:pb-40">
+				<div class="flex constrain my-16">
+					<p>
+						Valkon Enterprises Limited <br />
+						Company No.10360755<br />
+						131/133 Cannon Street, 3rd Floor<br />
+						London EC4N 5AX<br />
+						United Kingdom
+					</p>
+					<div class="ml-24">
+						<p>
+							https://valkon.group<br />
+							<a href="mailt:hello@valkon.group"
+								>hello@valkon.group</a
+							>
+						</p>
+						<p class="mt-16">
+							&copy; {{ new Date().getFullYear() }} Valkon
+							Enterprises Limited
+						</p>
+					</div>
+					<div class="ml-auto">
+						<p>+44 20 8638 6123</p>
+					</div>
+				</div>
+				<div class="mt-20 constrain pb-12 lg:pb-40 flex">
 					<div class="flex items-center">
 						<IconValkon class="mr-3" />
 						<IconMark />
 					</div>
+					<div class="ml-auto text-lg">More than money</div>
 				</div>
 			</div>
 		</footer>
@@ -48,10 +75,9 @@
 <script>
 import Contact from '@/components/contact'
 import IconValkon from '@/components/icons/icon-valkon'
-import IconMark from '@/components/icons/icon-mark'
 
 export default {
-	components: { Contact, IconValkon, IconMark },
+	components: { Contact, IconValkon },
 }
 </script>
 
