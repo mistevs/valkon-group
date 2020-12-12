@@ -68,7 +68,7 @@ export default {
 .card {
 	@apply w-full mb-6;
 
-	height: 500px;
+	height: 400px;
 
 	@screen lg {
 		@apply mx-3 mb-0;

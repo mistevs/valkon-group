@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<contact />
+		<contact v-if="!$route.path.includes('contact-success')" />
 		<footer class="bg-secondary-300 lg:pb-40">
 			<div class="footer-wrapper">
 				<nav class="mt-12 lg:mt-40">

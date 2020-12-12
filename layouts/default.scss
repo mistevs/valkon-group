@@ -108,7 +108,7 @@ body {
 	}
 
 	.dropdown {
-		@apply overflow-hidden;
+		@apply overflow-hidden z-10;
 
 		top: calc(100% + 12px);
 		left: 50%;
