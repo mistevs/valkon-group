@@ -1,0 +1,40 @@
+.notification-list {
+	position: fixed;
+	top: 50px;
+	display: block;
+	padding: 0;
+	color: black;
+	z-index: 9999;
+	// background: white;
+
+	width: 100%;
+
+	.notification {
+		position: relative;
+
+		max-width: 500px;
+		margin: 0 auto;
+
+		background: white;
+		padding: 20px 15px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.error {
+			border: 2px solid #c11c1c;
+
+			p {
+				color: #c11c1c;
+			}
+		}
+
+		.ico {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+		}
+	}
+}

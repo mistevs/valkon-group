@@ -168,19 +168,19 @@ export default {
 				return false
 				// } else if (!this.form.company) {
 				// this.$store.dispatch('addNotification', { 'type' : 'error', 'text' : 'Please fill out your email address so we can get back to you.' })
-			} else if (!this.form.phone) {
-				this.$store.dispatch('addNotification', {
-					type: 'error',
-					text:
-						'Please fill out your phone number so we can get back to you.',
-				})
-				this.$ga.event({
-					eventCategory: 'contact',
-					eventLabel: 'missing phone',
-					eventAction: 'error notification',
-				})
-				this.form.submitting = false
-				return false
+				// } else if (!this.form.phone) {
+				// 	this.$store.dispatch('addNotification', {
+				// 		type: 'error',
+				// 		text:
+				// 			'Please fill out your phone number so we can get back to you.',
+				// 	})
+				// 	this.$ga.event({
+				// 		eventCategory: 'contact',
+				// 		eventLabel: 'missing phone',
+				// 		eventAction: 'error notification',
+				// 	})
+				// 	this.form.submitting = false
+				// 	return false
 			} else if (!this.form.notes) {
 				this.$store.dispatch('addNotification', {
 					type: 'error',
@@ -213,7 +213,7 @@ export default {
 						eventLabel: 'contact success',
 						eventAction: 'success',
 					})
-					this.$router.push('/success')
+					this.$router.push('/contact-success')
 				})
 				.finally(() => {
 					this.form.submitting = false
