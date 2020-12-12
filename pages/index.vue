@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="content">
-			<section class="flex constrain flex-col lg:flex-row px-6 lg:px-0">
+			<section class="flex constrain flex-col lg:flex-row px-6 xl:px-0">
 				<div class="content--left">
 					<h1>More than money</h1>
 					<h3 class="mt-16">

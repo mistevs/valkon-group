@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<contact v-if="!$route.path.includes('contact-success')" />
-		<footer class="bg-secondary-300 lg:pb-40">
+		<footer class="bg-secondary-300">
 			<div class="footer-wrapper">
 				<nav class="mt-12 lg:mt-40">
 					<ul
@@ -73,7 +73,7 @@
 						More than money
 					</div>
 				</div>
-				<p class="lg:hidden mt-4 text-sm my-4 text-center">
+				<p class="md:hidden mt-4 text-sm my-4 text-center">
 					&copy; {{ new Date().getFullYear() }} Valkon Enterprises
 					Limited
 				</p>

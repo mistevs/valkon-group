@@ -2,7 +2,7 @@
 	<div class="contact bg-light">
 		<div class="flex flex-col lg:flex-row constrain px-0 w-full">
 			<div
-				class="contact-dark bg-primary-200 text-light px-6 py-12 lg:p-40 lg:pl-0 lg:pr-24"
+				class="contact-dark bg-primary-200 text-light px-6 py-12 md:p-40 md:pl-8 lg:pr-24"
 			>
 				<h3>Contact ValKon Group</h3>
 				<h2 class="mt-12 lg:mt-24">
