@@ -18,7 +18,7 @@
 						131/133 Cannon Street, 3rd Floor<br />
 						London EC4N 5AX<br />
 						United Kingdom<br /><br /><br />
-						london@valkongroup.com<br /><br />
+						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
 					</p>
@@ -37,7 +37,7 @@
 						131/133 Cannon Street, 3rd Floor<br />
 						London EC4N 5AX<br />
 						United Kingdom<br /><br /><br />
-						london@valkongroup.com<br /><br />
+						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
 					</p>
@@ -56,7 +56,7 @@
 						131/133 Cannon Street, 3rd Floor<br />
 						London EC4N 5AX<br />
 						United Kingdom<br /><br /><br />
-						london@valkongroup.com<br /><br />
+						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
 					</p>

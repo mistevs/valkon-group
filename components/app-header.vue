@@ -187,6 +187,12 @@ nav {
 			}
 		}
 
+		ul li a {
+			@screen lg {
+				@apply pl-5 pr-10;
+			}
+		}
+
 		a {
 			@screen lg {
 				@apply px-5;

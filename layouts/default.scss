@@ -97,7 +97,7 @@ body {
 		.dropdown {
 			@apply opacity-100 block;
 
-			height: 140px;
+			height: 96px;
 
 			> li > a {
 				&:hover {
@@ -110,7 +110,7 @@ body {
 	.dropdown {
 		@apply overflow-hidden;
 
-		top: calc(100%);
+		top: calc(100% + 12px);
 		left: 50%;
 		transform: translateX(-50%);
 

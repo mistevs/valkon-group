@@ -44,20 +44,16 @@
 						London EC4N 5AX<br />
 						United Kingdom
 					</p>
-					<div class="ml-24">
-						<p>
-							https://valkon.group<br />
-							<a href="mailt:hello@valkon.group"
-								>hello@valkon.group</a
-							>
-						</p>
-						<p class="mt-16">
+
+					<div class="ml-auto text-right">
+						<p>+44 20 8638 6123</p>
+						<a href="mailt:hello@valkon.group"
+							>hello@valkon.group</a
+						>
+						<p class="mt-12">
 							&copy; {{ new Date().getFullYear() }} Valkon
 							Enterprises Limited
 						</p>
-					</div>
-					<div class="ml-auto">
-						<p>+44 20 8638 6123</p>
 					</div>
 				</div>
 				<div class="mt-20 constrain pb-12 lg:pb-40 flex">
