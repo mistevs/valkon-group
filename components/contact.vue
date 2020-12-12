@@ -137,6 +137,17 @@ export default {
 		form: { submitting: false },
 	}),
 	methods: {
+		encode(data) {
+			return Object.keys(data)
+				.map(
+					(key) =>
+						`${encodeURIComponent(key)}=${encodeURIComponent(
+							data[key]
+						)}`
+				)
+				.join('&')
+		},
+
 		// eslint-disable-next-line
 		submitForm() {
 			this.form.submitting = true
