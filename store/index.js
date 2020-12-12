@@ -26,7 +26,7 @@ const createStore = () => {
 
 				setTimeout(() => {
 					commit('removeNotification', notification.text)
-				}, 2000)
+				}, 5000)
 			},
 
 			removeNotification({ commit }, message) {

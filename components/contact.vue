@@ -115,7 +115,7 @@
 							type="submit"
 							id="submitFormButton"
 							name="submit"
-							:value="submitting ? 'Sending ...' : 'Submit'"
+							:value="form.submitting ? 'Sending ...' : 'Submit'"
 							v-track:click="{
 								category: 'contact',
 								label: 'submit',
