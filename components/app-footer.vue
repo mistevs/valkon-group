@@ -36,33 +36,47 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="flex constrain my-16">
-					<p>
-						Valkon Enterprises Limited <br />
-						Company No.10360755<br />
-						131/133 Cannon Street, 3rd Floor<br />
-						London EC4N 5AX<br />
-						United Kingdom
-					</p>
-
-					<div class="ml-auto text-right">
-						<p>+44 20 8638 6123</p>
-						<a href="mailt:hello@valkon.group"
+				<div class="flex flex-col lg:flex-row constrain my-16">
+					<div>
+						<p class="text-md">Valkon Enterprises Limited</p>
+						<p class="lg:hidden">+44 20 8638 6123</p>
+						<a class="lg:hidden" href="mailt:hello@valkon.group"
 							>hello@valkon.group</a
 						>
-						<p class="mt-12">
+						<p class="mt-10">
+							131/133 Cannon Street, 3rd Floor<br />
+							London EC4N 5AX<br />
+							United Kingdom
+						</p>
+					</div>
+					<div class="lg:ml-auto lg:text-right text-md">
+						<p class="hidden lg:block">+44 20 8638 6123</p>
+						<a
+							class="hidden lg:block"
+							href="mailt:hello@valkon.group"
+							>hello@valkon.group</a
+						>
+						<p class="hidden lg:block mt-12">
 							&copy; {{ new Date().getFullYear() }} Valkon
 							Enterprises Limited
 						</p>
 					</div>
 				</div>
-				<div class="mt-20 constrain pb-12 lg:pb-40 flex">
-					<div class="flex items-center">
+				<div
+					class="lg:mt-20 constrain pb-12 lg:pb-40 flex flex-col lg:flex-row"
+				>
+					<div class="flex items-center justify-center">
 						<IconValkon class="mr-3" />
 						<IconMark />
 					</div>
-					<div class="ml-auto text-lg">More than money</div>
+					<div class="lg:ml-auto text-md lg:text-lg text-center">
+						More than money
+					</div>
 				</div>
+				<p class="lg:hidden mt-4 text-sm my-4 text-center">
+					&copy; {{ new Date().getFullYear() }} Valkon Enterprises
+					Limited
+				</p>
 			</div>
 		</footer>
 	</div>
