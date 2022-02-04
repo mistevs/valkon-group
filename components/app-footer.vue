@@ -44,8 +44,8 @@
 							>hello@valkon.group</a
 						>
 						<p class="mt-10">
-							131/133 Cannon Street, 3rd Floor<br />
-							London EC4N 5AX<br />
+							167-169, Great Portland Street, 5th Floor<br />
+							London, England, W1W 5PF<br />
 							United Kingdom
 						</p>
 					</div>
