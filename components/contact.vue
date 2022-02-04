@@ -17,8 +17,8 @@
 							<br />
 							<br />
 							<br />
-							131/133 Cannon St, 3rd Fl<br />
-							London EC4N 5AX<br />
+							167-169, Great Portland Street, 5th Floor<br />
+							London, England, W1W 5PF<br />
 							United Kingdom
 						</p>
 					</div>

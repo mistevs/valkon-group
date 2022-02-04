@@ -15,9 +15,9 @@
 				<div class="lg:ml-auto lg:w-1/2">
 					<p class="font-body">
 						Valkon Enterprises Limited<br />
-						131/133 Cannon Street, 3rd Floor<br />
-						London EC4N 5AX<br />
-						United Kingdom<br /><br /><br />
+						167-169, Great Portland Street, 5th Floor<br />
+						London, England, W1W 5PF<br />
+						United Kingdom<br /><br />
 						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
@@ -34,9 +34,9 @@
 				<div class="lg:ml-auto lg:w-1/2">
 					<p class="font-body">
 						Valkon Enterprises Limited<br />
-						131/133 Cannon Street, 3rd Floor<br />
-						London EC4N 5AX<br />
-						United Kingdom<br /><br /><br />
+						167-169, Great Portland Street, 5th Floor<br />
+						London, England, W1W 5PF<br />
+						United Kingdom<br /><br />
 						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
@@ -53,9 +53,9 @@
 				<div class="lg:ml-auto lg:w-1/2">
 					<p class="font-body">
 						Valkon Enterprises Limited<br />
-						131/133 Cannon Street, 3rd Floor<br />
-						London EC4N 5AX<br />
-						United Kingdom<br /><br /><br />
+						167-169, Great Portland Street, 5th Floor<br />
+						London, England, W1W 5PF<br />
+						United Kingdom<br /><br />
 						london@valkon.group<br /><br />
 						+44 20 8638 6123<br />
 						+44 20 3216 9368
