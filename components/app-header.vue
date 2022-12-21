@@ -8,8 +8,8 @@
 				<li>
 					<a class="pr-3 border-r border-secondary-300" href="">EN</a>
 				</li>
-				<li><a class="pl-3" href="">RU</a></li>
-				<li class="hidden lg:block ml-auto">
+				<!--<li><a class="pl-3" href="">RU</a></li>-->
+				<!--<li class="hidden lg:block ml-auto">
 					<nuxt-link
 						to="/social-responsibilities"
 						class="crown__social-responsibility"
@@ -19,6 +19,8 @@
 				<li class="nav-toggle" @click="showNav = !showNav">
 					{{ showNav ? 'X' : 'O' }}
 				</li>
+
+				-->
 			</ul>
 		</div>
 		<nav
@@ -42,6 +44,7 @@
 				<li class="lg:hidden">
 					<nuxt-link to="/" class="">Home</nuxt-link>
 				</li>
+				<!--
 				<li>
 					<nuxt-link to="/agencies-partners" class=""
 						>For Agencies & Partners</nuxt-link
@@ -52,6 +55,7 @@
 						>For Private Clients</nuxt-link
 					>
 				</li>
+				
 				<li class="lg:ml-auto relative has-dropdown">
 					<nuxt-link to="/services" class="">Services</nuxt-link>
 					<ul
@@ -76,9 +80,13 @@
 				<li>
 					<nuxt-link to="/about" class="">About</nuxt-link>
 				</li>
+				-->
 				<li>
-					<nuxt-link to="/contact" class="pr-0">Contact</nuxt-link>
+					<nuxt-link to="/contact" class="lg:ml-auto pr-0"
+						>Contact</nuxt-link
+					>
 				</li>
+				<!--
 				<li class="lg:hidden">
 					<nuxt-link
 						to="/social-responsibilities"
@@ -86,6 +94,7 @@
 						>Social Responsibility</nuxt-link
 					>
 				</li>
+				-->
 			</ul>
 		</nav>
 	</header>
