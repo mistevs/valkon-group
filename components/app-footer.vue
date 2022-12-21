@@ -84,7 +84,7 @@
 
 <script>
 import Contact from '@/components/contact'
-import IconValKon from '@/components/icons/icon-ValKon'
+import IconValKon from '@/components/icons/icon-valkon'
 
 export default {
 	components: { Contact, IconValKon },

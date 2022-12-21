@@ -28,7 +28,7 @@ import Services from '@/components/services'
 import WhyWork from '~/components/why-work.vue'
 
 export default {
-	components: { SectionHeader, Jurisdictions, CarWhyWorkd },
+	components: { SectionHeader, Jurisdictions, Card, WhyWork },
 }
 </script>
 
